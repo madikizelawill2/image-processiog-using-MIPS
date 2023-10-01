@@ -1,6 +1,6 @@
 .data
-    input_filename:     .asciiz "path/to/input.ppm"
-    output_filename:    .asciiz "path/to/output.ppm"
+    input_filename:     .asciiz"/Users/willmadikizela/My Drive/UCT/CSC2002S/Assignemnts/image-processiog-using-MIPS/sample_images/house_64_in_ascii_cr.ppm"
+    output_filename:    .asciiz "/Users/willmadikizela/My Drive/UCT/CSC2002S/Assignemnts/image-processiog-using-MIPS/sample__output_images/house_64_in_ascii_cr_output_greyscale.ppm"
     ascii_buffer:       .space 12
 
 .text                              

@@ -1,7 +1,7 @@
 .data
-input_filename: .asciiz "path/to/input/file"
+input_filename: .asciiz "/Users/willmadikizela/My Drive/UCT/CSC2002S/Assignemnts/image-processiog-using-MIPS/sample_images/house_64_in_ascii_cr.ppm"
 input_buffer: .space 49171
-output_filename: .asciiz "path/to/output/file"
+output_filename: .asciiz "/Users/willmadikizela/My Drive/UCT/CSC2002S/Assignemnts/image-processiog-using-MIPS/sample__output_images/house_64_in_ascii_cr_output_brighness.ppm"
 output_buffer: .space 49171
 ascii_buffer: .word 0
 avg_input_prompt: .asciiz "Average pixel value of the original image:\n"
@@ -52,7 +52,7 @@ increment_pixels:
     add $s7, $s7, $t0 
     addi $t0, $t0, 10 
     li $t3, 255
-    min $t0, $t0, $t3 # MIPS does not have a native min operation. You might need a macro for this.
+    min $t0, $t0, $t3 
     add $s6, $s6, $t0 
     la $t5, ascii_buffer
     li $t1, 10 
